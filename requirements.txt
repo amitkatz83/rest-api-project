@@ -1,0 +1,10 @@
+#name of libraries
+flask
+flask-smorest
+python-dotenv
+sqlalchemy
+flask-sqlalchemy
+marshmallow
+flask_jwt_extended
+passlib
+flask-migrate
