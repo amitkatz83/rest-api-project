@@ -8,3 +8,4 @@ marshmallow
 flask_jwt_extended
 passlib
 flask-migrate
+gunicorn
