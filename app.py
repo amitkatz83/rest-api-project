@@ -13,13 +13,15 @@ from resources.tag import blp as TagBlueprint
 from resources.user import blp as UserBlueprint
 from flask_jwt_extended import JWTManager
 from flask import Flask, jsonify
+from dotenv import load_dotenv #for load .env file
+
 
 #create function to run the application
 def create_app(db_url=None):
      
     #to run the application
     app=Flask(__name__)
-
+    load_dotenv() #to load .env file 
     app.config["PROPAGATE_EXCEPTIONS"] = True
     app.config["API_TITLE"] = "Stores REST API"
     app.config["API_VERSION"] = "v1"
